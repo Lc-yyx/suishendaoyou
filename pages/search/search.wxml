@@ -1,0 +1,18 @@
+
+<!--pages/search/search.wxml-->
+<view class="mainViewClass">
+
+ 
+
+  <!--表单-->
+  <form bindsubmit="formSubmit">
+    <input placeholder="请输入景点" name="input" />
+    <button type="primary" form-type="submit"> 搜 索 </button>
+  </form>
+
+  <!--名人名言模块-->
+  <view class="index-motto">
+    <text class="motto">  {{motto.content}} </text>
+    <text class="motto-author"> {{motto.author}}</text>
+  </view>
+</view>

@@ -1,0 +1,56 @@
+/* pages/search/search.wxss */
+
+/*主视图样式*/
+.mainViewClass {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+/*图片样式*/
+image{
+  width:293rpx;
+  height: 100rpx;
+  margin-top: 60rpx;
+}
+
+/*表单样式*/
+form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*文本输入框样式*/
+input{
+  width: 580rpx;
+  height: 90rpx;
+  padding:6rpx 20rpx;
+  border: 2rpx solid;
+  border-radius: 4rpx;
+  font-size: 36rpx;
+  margin: 20rpx 0;
+}
+
+/*按钮样式*/
+button{
+  width: 200rpx;
+}
+
+/*名人名言模块样式*/
+.index-motto{
+  margin-top: 240rpx;
+  font-size: 28rpx;
+}
+
+
+/*作者名字样式*/
+.motto-author{
+  
+  margin-left: 480rpx;
+}

@@ -1,0 +1,139 @@
+/* pages/home/home.wxss */
+
+/*页面样式*/
+page{
+  width: 100%;
+  height: 100%;
+}
+
+/*主视图样式*/
+.mainClass{
+  width: 100%;
+  height: 100%;
+  font-family: "Microsoft YaHei"
+}
+
+/*顶部 推荐模块 滚动视图样式*/
+.topBarClass{
+  height: 60rpx;
+  padding: 0 6rpx;
+  margin:10rpx 0;
+  border-left:10rpx solid #99CCFF;
+  display: flex;
+  align-items: flex-end;
+}
+
+.topBarClass .sign-icon{
+  width: 40rpx;
+  height: 40rpx;
+}
+.topBarClass text{
+  font: 30rpx "SimSun";
+  color:#494949;
+  font-weight: bold;
+}
+
+/*滚动图片区域样式*/
+swiper{
+    width: 750rpx;
+  height: 340rpx;
+}
+.slide-image{
+  width: 750rpx;
+  height: 340rpx;
+}
+
+/*热门城市*/
+.hot-citys{
+  padding: 20rpx 0;
+  height: 440rpx;
+  margin-bottom: 10rpx;
+  box-shadow: 0 2rpx 4rpx 4rpx #ededed;
+}
+.hc-bar{
+  height: 60rpx;
+  padding: 0 6rpx;
+  margin:10rpx 0 20rpx 0;
+  border-left:10rpx solid #99CCFF;
+  display: flex;
+  align-items: flex-end;
+}
+.hc-bar text{
+  font: 30rpx "SimSun";
+  color:#494949;
+  font-weight: bold;
+}
+.hc-bar image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.hc-citylist{
+  display: flex;
+   justify-content: space-around;
+}
+.hc-citys{
+ 
+ flex-direction: column;
+ align-items: flex-start;
+}
+.hc-citys image{
+  width: 170rpx;
+  height: 251rpx;
+  border-radius: 5px;
+}
+.hc-citys .city-name{
+  display: block;
+  max-width: 170rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 40rpx;
+  font-weight: bold;
+  color:#494949;
+  padding: 16rpx 45rpx;
+}
+
+
+.boutique-signs{
+  padding: 20rpx 0 40rpx 0;
+  height: 440rpx;
+}
+.bs-bar{
+  height: 60rpx;
+  padding: 0 6rpx;
+  margin:10rpx 0;
+  border-left:10rpx solid #99CCFF;
+  display: flex;
+  align-items: flex-end;
+}
+.bs-bar text{
+  font: 30rpx "SimSun";
+  color:#494949;
+  font-weight: bold;
+}
+.bs-bar image{
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.bs-signlist .sign{
+ margin-bottom: 30rpx;
+ position: relative;
+ display: flex;
+ flex-direction: column;
+}
+.bs-signlist .sign .title-img{
+  width: 750rpx;
+  height: 500rpx
+}
+.bs-signlist .sign .sign-name{
+  font-size: 34rpx;
+  color:#494949;
+  font-weight: bold;
+  padding: 20rpx 30rpx; 
+}
+.bs-signlist .sign .sign-summary{
+  padding: 0 30rpx; 
+  font-size: 26rpx;
+  color:#8b8b8b;
+}

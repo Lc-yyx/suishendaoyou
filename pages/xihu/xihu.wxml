@@ -1,0 +1,22 @@
+<audio src="{{src}}" action="{{action}}" binderror="errorEvent" bindtimeupdate="timeupdateEvent" bindended="endEvent" ></audio>
+<!-- 播放背景 -->
+<image class="play-bg" mode="aspectFill" src="{{picurl}}" ></image>
+<!-- 唱片 -->
+<image wx:if="{{lyricHidden}}"  class="trun-bg" mode="aspectFill" src="{{picurl}}" style="transform: translateX(-50%) rotate({{deg}}deg);"></image>
+<!-- 进度条 -->
+<view class="footer">
+	<view class="progress">
+		<text>{{timeText}}</text>
+		<progress percent="{{per}}" color="red" stroke-width="4"/>
+		<text>{{durationText}}</text>
+	</view>
+  	<view class="controls">
+    <view class="btn btn-prev" bindtap="prevEvent" style="background-image:url(../../images/prev.png)">上一首</view>
+    <view class="btn btn-play" bindtap="actionEvent" style="background-image:url(../../images/{{status}}.png)">{{status}}      </view>
+    <view class="btn btn-next" bindtap="nextEvent" style="background-image:url(../../images/next.png)">下一首</view>
+    <view class="btn btn-mode" bindtap="switchModeEvent" style="background-image:url(../../images/{{mode}}.png)">{{mode}}</view>
+  	</view>
+</view>
+<!-- 播放方式 -->
+<toast hidden="{{toastHidden}}" duration="2000" bindchange="toastChange">{{toastMsg}}</toast>
+

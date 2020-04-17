@@ -1,0 +1,53 @@
+<!--pages/home/home.wxml-->
+<view class="mainClass">
+
+<!--精彩推荐-->
+  <view class="topBarClass">
+    <text>  精彩推荐</text>
+    <image src="../../images/mark.png" class="sign-icon"></image>
+  </view>
+
+  <!--顶部滚动视图-->
+  <swiper indicator-dots="true" autoplay="true" interval="6000" duration="3000">
+    <block wx:for="{{recommendSigns}}">
+      <swiper-item>
+        <image src="{{item.image}}" class="slide-image" data-to="{{item.disable}}" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+<!--热门城市 标题栏目-->
+  <view class="hot-citys">
+    <view class="hc-bar">
+      <text> 热门城市</text>
+      <image src="../../images/mark.png" class="sign-icon"></image>
+    </view>
+
+<!--热门城市 板块-->
+    <view class="hc-citylist">
+      <view class="hc-citys" wx:for="{{hotCitys}}" data-id="{{item.id}}">
+        <image src="{{item.image}}" data-to="{{item.disable}}"  bindtap="toCity"></image>
+        <text class="city-name" data-to="{{item.disable}}"  bindtap="toCity" >{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+
+<!--热门景点 标题模块-->
+  <view class="boutique-signs">
+    <view class="bs-bar">
+      <text> 热门景点</text>
+      <image src="../../images/mark.png" class="sign-icon"></image>
+    </view> 
+
+    <!--精品景点列表-->
+    <view class="bs-signlist">
+      <view class="sign" wx:for="{{boutiqueSigns}}" data-id="{{item.id}}"  >
+        <image src="{{item.images.title_img}}" class="title-img" bindtap="bindToDetailTap" data-to="{{item.disable}}"></image>
+        <text class="sign-name" bindtap="bindToDetailTap" data-to="{{item.disable}}">{{item.name}}</text>
+        <text class="sign-summary">{{item.miniSummary}}</text>
+      </view>
+    </view>
+  </view>
+
+  
+</view>

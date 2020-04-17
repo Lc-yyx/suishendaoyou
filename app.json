@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/mySigns/mySigns",
+    "pages/search/search",
+    "pages/xihu/xihu",
+    "pages/hangzhou/hangzhou"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#0000",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#EEEEEE"
+  },
+  
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "主页",
+        "iconPath": "images/TabbarHomeN.png",
+        "selectedIconPath": "images/TabbarHomeS.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "寻找",
+        "iconPath": "images/TabbarSearchN.png",
+        "selectedIconPath": "images/TabbarSearchS.png"
+      },
+      {
+        "pagePath": "pages/mySigns/mySigns",
+        "text": "我的",
+        "iconPath": "images/TabbarCollectN.png",
+        "selectedIconPath": "images/TabbarCollectS.png"
+      }
+    ],
+    "borderStyle": "white",
+    "backgroundColor": "#f0f0f0",
+    "selectedColor": "#1aad16"
+  },
+  "sitemapLocation": "sitemap.json"
+}

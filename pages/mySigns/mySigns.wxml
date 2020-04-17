@@ -1,0 +1,24 @@
+<!--pages/myBooks/myBooks.wxml-->
+<view class="mainViewClass">
+
+<!--//用户信息模块-->
+  <view class="userAvatar">
+    <image src="{{userInfo.avatarUrl}}"></image>
+    <view>
+      <text class="nickName">{{userInfo.nickName}}</text>
+      <text class="motto">我们的生活就像旅行，思想是导游者，没有导游者，一切都会停止。目标会丧失，力量也会化为乌有。\n\n—— 歌德</text>
+    </view>
+  </view>
+
+  <!--收藏的书模块-->
+  <view class="signsList">
+    <view class="top-bar">
+      <image src="../../images/like.png"></image>
+      <text>我收藏的景点</text>
+    </view>
+    <view class="empty" wx:if="{{signs.length == 0}}">
+      <image src="../../images/empty.png"></image>
+      <text>您还未收藏景点</text>
+    </view>
+  </view>
+</view>
